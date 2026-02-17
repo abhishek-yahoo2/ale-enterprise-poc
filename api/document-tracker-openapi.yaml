@@ -1,0 +1,8 @@
+openapi: 3.0.3
+info:
+  title: Document Tracker API
+  version: 1.0.0
+paths:
+  /api/document-tracker/search:
+    post:
+      summary: Search documents

@@ -1,0 +1,8 @@
+openapi: 3.0.3
+info:
+  title: Capital Call API
+  version: 1.0.0
+paths:
+  /api/capital-call/search:
+    post:
+      summary: Search capital calls
