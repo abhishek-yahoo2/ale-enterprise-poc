@@ -10,7 +10,24 @@
       "Bash(ls:*)",
       "Bash(xargs:*)",
       "Bash(sort:*)",
-      "Bash(npm run test:coverage:*)"
+      "Bash(npm run test:coverage:*)",
+      "Bash(/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/components/common/EmptyState/__tests__/hooks.test.ts:*)",
+      "Bash(/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/components/common/FilterContainer/__tests__/hooks.test.ts:*)",
+      "Bash(/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/components/common/LoadingSpinner/__tests__/hooks.test.ts:*)",
+      "Bash(/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/components/common/Pagination/__tests__/hooks.test.ts:*)",
+      "Bash(/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/hooks/__tests__/useCapitalCallSearch.test.ts:*)",
+      "Bash(/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/hooks/__tests__/useLocking.test.ts:*)",
+      "Bash(/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/alternative-data/hooks/__tests__/useAlternativeDataSearch.test.ts:*)",
+      "Bash(/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/auth/__tests__/LoginPage.test.tsx:*)",
+      "Bash(/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/document-tracker/hooks/__tests__/useDocumentSearch.test.ts:*)",
+      "Bash(/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/components/__tests__/CapitalCallWorkflowActions.test.tsx:*)",
+      "Bash(/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/components/__tests__/ApprovalDialog.test.tsx:*)",
+      "Bash(/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/components/__tests__/SubmitDialog.test.tsx:*)",
+      "Bash(/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/document-tracker/components/__tests__/DocumentTrackerGrid.test.tsx:*)",
+      "Bash(/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/components/__tests__/LockDialog.test.tsx:*)",
+      "Bash(/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/document-tracker/pages/__tests__/DocumentTrackerPage.test.tsx:*)",
+      "Bash(/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/document-tracker/pages/__tests__/DocumentDetailsPage.test.tsx:*)",
+      "Bash(/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/components/__tests__/CapitalCallFilters.test.tsx:*)"
     ]
   }
 }

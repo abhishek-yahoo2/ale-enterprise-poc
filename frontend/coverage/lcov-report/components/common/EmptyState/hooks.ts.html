@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/14</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/13</span>
+                <span class='fraction'>13/13</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -112,28 +112,28 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -151,28 +151,28 @@ interface EmptyStateConfig {
     onAction?: () =&gt; void;
 }
 &nbsp;
-export const useEmptyState = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(i</span>nitialConfig: EmptyStateConfig) =&gt; {</span>
-    const [config, setConfig] = <span class="cstat-no" title="statement not covered" >useState&lt;EmptyStateConfig&gt;(initialConfig);</span>
-    const [isVisible, setIsVisible] = <span class="cstat-no" title="statement not covered" >useState(true);</span>
+export const useEmptyState = (initialConfig: EmptyStateConfig) =&gt; {
+    const [config, setConfig] = useState&lt;EmptyStateConfig&gt;(initialConfig);
+    const [isVisible, setIsVisible] = useState(true);
 &nbsp;
-    const updateConfig = <span class="cstat-no" title="statement not covered" >useCallback(<span class="fstat-no" title="function not covered" >(n</span>ewConfig: Partial&lt;EmptyStateConfig&gt;) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        setConfig(<span class="fstat-no" title="function not covered" >prev </span>=&gt; (<span class="cstat-no" title="statement not covered" >{ ...prev, ...newConfig })</span>);</span>
+    const updateConfig = useCallback((newConfig: Partial&lt;EmptyStateConfig&gt;) =&gt; {
+        setConfig(prev =&gt; ({ ...prev, ...newConfig }));
     }, []);
 &nbsp;
-    const hide = <span class="cstat-no" title="statement not covered" >useCallback(<span class="fstat-no" title="function not covered" >() =</span>&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        setIsVisible(false);</span>
+    const hide = useCallback(() =&gt; {
+        setIsVisible(false);
     }, []);
 &nbsp;
-    const show = <span class="cstat-no" title="statement not covered" >useCallback(<span class="fstat-no" title="function not covered" >() =</span>&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        setIsVisible(true);</span>
+    const show = useCallback(() =&gt; {
+        setIsVisible(true);
     }, []);
 &nbsp;
-    const reset = <span class="cstat-no" title="statement not covered" >useCallback(<span class="fstat-no" title="function not covered" >() =</span>&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        setConfig(initialConfig);</span>
-<span class="cstat-no" title="statement not covered" >        setIsVisible(true);</span>
+    const reset = useCallback(() =&gt; {
+        setConfig(initialConfig);
+        setIsVisible(true);
     }, [initialConfig]);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return {</span>
+    return {
         config,
         isVisible,
         updateConfig,
@@ -187,7 +187,7 @@ export const useEmptyState = <span class="cstat-no" title="statement not covered
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-02-18T06:40:40.332Z
+                at 2026-02-18T10:20:07.326Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

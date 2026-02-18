@@ -192,4 +192,38 @@ Use this when applying the plan:
 
 ---
 
-**Next step:** Implement the chosen design tokens and sidebar standard in the live app (e.g. in `ale-enterprise-poc`), then update the mockups to match so design and code stay in sync.
+## 7. Implementation in ALE Frontend (Completed)
+
+The following was implemented in `ale-enterprise-poc/frontend` to align the app with the mockup consistency plan.
+
+### Design tokens
+- **tailwind.config.js** and **src/styles/globals.css**: Primary teal set to `#006C6A`; added `ale-sidebar` (`#F0F0F0`) and `ale-sidebar-active` (`#E6F0F0`). Secondary button: white + grey border.
+
+### Header
+- **src/components/layout/Header.tsx**: Northern Trust branding (Anchor icon + "NORTHERN TRUST | Alternatives Lifecycle Engine"); right side "ALE - Data View | SYSTEM" and user/logout. Dark teal background.
+
+### Sidebar
+- **src/components/layout/Sidebar.tsx**: Canonical pattern (A): light grey background when expanded, teal text + light teal highlight for active item. Collapsed state: narrow teal strip with icons only. Uses lucide icons (LayoutDashboard, FileText, DollarSign, BarChart3). Menu labels: HOME, DOCUMENT TRACKER, ACCOUNTING & CASH, ALTERNATIVE DATA. Always visible on desktop (expanded or collapsed).
+
+### Buttons
+- **src/components/ui/Button.tsx**: Secondary variant = white + grey border; outline = neutral border. Primary unchanged (teal).
+- **src/styles/globals.css**: `.btn-secondary` and `.btn-primary` use design tokens.
+
+### Metric cards
+- **src/features/capital-call/components/SubTabCountCards.tsx**: All five cards use the same style: `bg-primary` / `hover:bg-primary-dark` and white text (no mixed teal/green).
+
+### Accounting & Cash
+- **src/app/Router.tsx**: `/accounting-cash` and `/accounting-cash/private-equity` (and capital-call sub-routes) wrapped in `ProtectedRoute` so they use the same AppLayout (header + sidebar).
+- **src/features/accounting-cash/AccountingCashLanding.tsx**: Duplicate header removed; page renders only title + tiles. Tile styling uses `primary` and `ale-sidebar-active`.
+
+### Other
+- **CapitalCallFilters**: SEARCH uses `variant="primary"`; RESET uses `variant="secondary"`.
+- **alert.tsx**: Fixed `forwardRef` generic syntax (pre-existing) for TypeScript build.
+
+### Verification
+- **Manual**: Run `npm run dev`, open Dashboard, Document Tracker, Accounting & Cash, Alternative Data, and Capital Call. Confirm: same teal header, same light grey sidebar with teal active state, same SEARCH (teal) / RESET (grey) buttons, and unified teal metric cards on Capital Call.
+- **Checklist (section 5)**: One sidebar style ✅, one primary teal ✅, full-page screens use same header ✅, SEARCH/RESET consistent ✅, metric cards one style ✅. Section headers/labels and modals can be refined in a later pass.
+
+---
+
+**Next step:** Run the app locally and do a quick visual pass; fix any remaining project build/test issues (e.g. TS strictness, missing deps) separately.

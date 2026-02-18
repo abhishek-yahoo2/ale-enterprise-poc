@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Color Palette */
+/* ALE design tokens (mockup consistency) */
 :root {
-  --color-primary: #0a7a82;
-  --color-primary-light: #0d9ba6;
-  --color-primary-dark: #084d52;
+  --color-primary: #006C6A;
+  --color-primary-light: #008080;
+  --color-primary-dark: #004C4C;
+  --color-sidebar: #F0F0F0;
+  --color-sidebar-active: #E6F0F0;
   --color-secondary: #f59e0b;
   --color-success: #22c55e;
   --color-error: #ef4444;
@@ -91,11 +93,11 @@ h4 {
 }
 
 .btn-primary {
-  @apply bg-primary text-white hover:bg-primary-dark focus:ring-blue-500;
+  @apply bg-primary text-white hover:bg-primary-dark focus:ring-primary;
 }
 
 .btn-secondary {
-  @apply bg-neutral-100 text-neutral-900 hover:bg-neutral-200 focus:ring-neutral-400;
+  @apply bg-white border border-neutral-300 text-neutral-700 hover:bg-neutral-50 focus:ring-neutral-400;
 }
 
 .btn-outline {

@@ -8,10 +8,10 @@ interface AppLayoutProps {
 }
 
 export const AppLayout = ({ children }: AppLayoutProps) => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(true);
 
   const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen);
+    setSidebarOpen((v) => !v);
   };
 
   const closeSidebar = () => {
@@ -22,7 +22,7 @@ export const AppLayout = ({ children }: AppLayoutProps) => {
     <div className="flex flex-col h-screen">
       <Header onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen} />
       <div className="flex flex-1 overflow-hidden">
-        <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} />
+        <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} onToggle={toggleSidebar} />
         <main className="flex-1 overflow-auto">
           <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8">
             {children}

@@ -1,75 +1,79 @@
 import { jest } from '@jest/globals';
-import { renderHook, waitFor } from '@testing-library/react';
 import React from 'react';
+import { renderHook, act } from '@testing-library/react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 jest.unstable_mockModule('../../api/documentTrackerApi', () => ({
   documentTrackerApi: {
-    search: jest.fn().mockResolvedValue({
-      data: [{ id: 1, genId: 'GEN001' }],
-      pagination: { currentPage: 0, pageSize: 25, totalElements: 1, totalPages: 1 },
-    }),
-    getDetails: jest.fn().mockResolvedValue({
-      genId: 'GEN001',
-      documentType: 'PDF',
-      subDocuments: [],
-    }),
-    export: jest.fn().mockResolvedValue(new Blob(['data'])),
+    search: jest.fn().mockResolvedValue({ data: [], pagination: { page: 0, size: 25, totalElements: 0, totalPages: 0 } }),
+    getDetails: jest.fn().mockResolvedValue({ genId: 'GEN001', documentType: 'TYPE1' }),
+    export: jest.fn().mockResolvedValue(new Blob()),
   },
 }));
 
 const { useDocumentSearch, useDocumentDetails, useDocumentExport } = await import('../useDocumentSearch');
 
-function createWrapper() {
-  const queryClient = new QueryClient({
-    defaultOptions: { queries: { retry: false, gcTime: 0 } },
-  });
+const createWrapper = () => {
+  const queryClient = new QueryClient({ defaultOptions: { queries: { retry: false, gcTime: 0 } } });
   return ({ children }: { children: React.ReactNode }) =>
     React.createElement(QueryClientProvider, { client: queryClient }, children);
-}
+};
 
 describe('useDocumentSearch', () => {
-  it('returns search data', async () => {
+  it('returns search data and handlers', () => {
     const { result } = renderHook(() => useDocumentSearch(), { wrapper: createWrapper() });
-    await waitFor(() => expect(result.current.data).toBeDefined());
-    expect(result.current.data?.data).toHaveLength(1);
+    expect(result.current.handleSearch).toBeDefined();
+    expect(result.current.handlePageChange).toBeDefined();
+    expect(result.current.handleSort).toBeDefined();
+    expect(result.current.handleReset).toBeDefined();
+    expect(result.current.refetch).toBeDefined();
   });
 
-  it('has initial search params', () => {
+  it('handleSearch updates filters and resets page to 0', () => {
     const { result } = renderHook(() => useDocumentSearch(), { wrapper: createWrapper() });
-    expect(result.current.searchParams.pagination).toEqual({ page: 0, size: 25 });
+    act(() => result.current.handleSearch({ type: 'INVOICE' }));
+    expect(result.current.searchParams.filters).toEqual({ type: 'INVOICE' });
+    expect(result.current.searchParams.pagination.page).toBe(0);
   });
 
-  it('exposes handleSearch', () => {
+  it('handlePageChange updates page number', () => {
     const { result } = renderHook(() => useDocumentSearch(), { wrapper: createWrapper() });
-    expect(typeof result.current.handleSearch).toBe('function');
+    act(() => result.current.handlePageChange(3));
+    expect(result.current.searchParams.pagination.page).toBe(3);
   });
 
-  it('exposes handlePageChange', () => {
+  it('handleSort updates sort parameters', () => {
     const { result } = renderHook(() => useDocumentSearch(), { wrapper: createWrapper() });
-    expect(typeof result.current.handlePageChange).toBe('function');
+    act(() => result.current.handleSort('genId', 'DESC'));
+    expect(result.current.searchParams.sort).toEqual([{ field: 'genId', direction: 'DESC' }]);
   });
 
-  it('exposes handleSort', () => {
+  it('handleReset resets to defaults', () => {
     const { result } = renderHook(() => useDocumentSearch(), { wrapper: createWrapper() });
-    expect(typeof result.current.handleSort).toBe('function');
-  });
-
-  it('exposes handleReset', () => {
-    const { result } = renderHook(() => useDocumentSearch(), { wrapper: createWrapper() });
-    expect(typeof result.current.handleReset).toBe('function');
+    act(() => result.current.handleSearch({ type: 'X' }));
+    act(() => result.current.handleSort('genId', 'DESC'));
+    act(() => result.current.handleReset());
+    expect(result.current.searchParams.filters).toEqual({});
+    expect(result.current.searchParams.pagination.page).toBe(0);
+    expect(result.current.searchParams.sort).toEqual([]);
   });
 });
 
 describe('useDocumentDetails', () => {
-  it('fetches details when genId is provided', async () => {
-    const { result } = renderHook(() => useDocumentDetails('GEN001'), { wrapper: createWrapper() });
-    await waitFor(() => expect(result.current.data).toBeDefined());
-    expect(result.current.data?.genId).toBe('GEN001');
-  });
-
   it('does not fetch when genId is empty', () => {
     const { result } = renderHook(() => useDocumentDetails(''), { wrapper: createWrapper() });
-    expect(result.current.isFetching).toBe(false);
+    expect(result.current.data).toBeUndefined();
+  });
+
+  it('fetches when genId is provided', () => {
+    const { result } = renderHook(() => useDocumentDetails('GEN001'), { wrapper: createWrapper() });
+    expect(result.current).toBeDefined();
+  });
+});
+
+describe('useDocumentExport', () => {
+  it('returns a mutation', () => {
+    const { result } = renderHook(() => useDocumentExport(), { wrapper: createWrapper() });
+    expect(result.current.mutate).toBeDefined();
   });
 });

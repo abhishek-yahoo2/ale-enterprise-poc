@@ -6,40 +6,41 @@ import { MemoryRouter } from 'react-router-dom';
 
 const { Sidebar } = await import('../Sidebar');
 
+const defaultProps = {
+  onClose: jest.fn(),
+  onToggle: jest.fn(),
+};
+
 describe('Sidebar', () => {
-  it('returns null when not open', () => {
-    const onClose = jest.fn();
-    const { container } = render(
+  it('renders collapsed strip when not open (desktop)', () => {
+    render(
       <MemoryRouter>
-        <Sidebar isOpen={false} onClose={onClose} />
+        <Sidebar isOpen={false} onClose={defaultProps.onClose} onToggle={defaultProps.onToggle} />
       </MemoryRouter>
     );
-    expect(container.innerHTML).toBe('');
+    expect(screen.getByRole('button', { name: /expand sidebar/i })).toBeInTheDocument();
   });
 
   it('renders menu items when open', () => {
-    const onClose = jest.fn();
     render(
       <MemoryRouter>
-        <Sidebar isOpen={true} onClose={onClose} />
+        <Sidebar isOpen={true} onClose={defaultProps.onClose} onToggle={defaultProps.onToggle} />
       </MemoryRouter>
     );
-    expect(screen.getByText('Dashboard')).toBeInTheDocument();
-    expect(screen.getByText('Document Tracker')).toBeInTheDocument();
-    expect(screen.getByText('Accounting & Cash')).toBeInTheDocument();
-    expect(screen.getByText('Alternative Data')).toBeInTheDocument();
+    expect(screen.getByText('HOME')).toBeInTheDocument();
+    expect(screen.getByText('DOCUMENT TRACKER')).toBeInTheDocument();
+    expect(screen.getByText('ACCOUNTING & CASH')).toBeInTheDocument();
+    expect(screen.getByText('ALTERNATIVE DATA')).toBeInTheDocument();
   });
 
   it('highlights the active route', () => {
-    const onClose = jest.fn();
     render(
       <MemoryRouter initialEntries={['/document-tracker']}>
-        <Sidebar isOpen={true} onClose={onClose} />
+        <Sidebar isOpen={true} onClose={defaultProps.onClose} onToggle={defaultProps.onToggle} />
       </MemoryRouter>
     );
-
-    const activeLink = screen.getByText('Document Tracker').closest('a');
-    expect(activeLink).toHaveClass('bg-primary-dark');
+    const activeLink = screen.getByText('DOCUMENT TRACKER').closest('a');
+    expect(activeLink).toHaveClass('bg-ale-sidebar-active');
   });
 
   it('calls onClose when a menu link is clicked', async () => {
@@ -47,11 +48,10 @@ describe('Sidebar', () => {
     const onClose = jest.fn();
     render(
       <MemoryRouter>
-        <Sidebar isOpen={true} onClose={onClose} />
+        <Sidebar isOpen={true} onClose={onClose} onToggle={defaultProps.onToggle} />
       </MemoryRouter>
     );
-
-    await user.click(screen.getByText('Dashboard'));
+    await user.click(screen.getByText('HOME'));
     expect(onClose).toHaveBeenCalled();
   });
 
@@ -60,11 +60,9 @@ describe('Sidebar', () => {
     const onClose = jest.fn();
     render(
       <MemoryRouter>
-        <Sidebar isOpen={true} onClose={onClose} />
+        <Sidebar isOpen={true} onClose={onClose} onToggle={defaultProps.onToggle} />
       </MemoryRouter>
     );
-
-    // The backdrop is the first div with the bg-black/50 class
     const backdrop = document.querySelector('.fixed.inset-0');
     expect(backdrop).toBeInTheDocument();
     await user.click(backdrop as Element);

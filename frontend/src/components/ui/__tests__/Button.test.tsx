@@ -23,7 +23,7 @@ describe('Button', () => {
     it('renders secondary variant', () => {
       render(<Button variant="secondary">Secondary</Button>);
       const button = screen.getByRole('button', { name: 'Secondary' });
-      expect(button).toHaveClass('bg-secondary', 'text-white');
+      expect(button).toHaveClass('bg-white', 'border', 'border-neutral-300', 'text-neutral-700');
     });
 
     it('renders danger variant', () => {
@@ -35,7 +35,7 @@ describe('Button', () => {
     it('renders outline variant', () => {
       render(<Button variant="outline">Outline</Button>);
       const button = screen.getByRole('button', { name: 'Outline' });
-      expect(button).toHaveClass('border', 'border-primary', 'text-primary');
+      expect(button).toHaveClass('border', 'border-neutral-300', 'text-neutral-700');
     });
 
     it('renders success variant', () => {

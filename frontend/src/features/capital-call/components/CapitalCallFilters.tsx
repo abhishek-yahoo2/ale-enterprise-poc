@@ -361,21 +361,13 @@ export const CapitalCallFilters: React.FC = () => {
             </div>
           </div>
           
-          {/* Action Buttons */}
+          {/* Action Buttons: primary SEARCH, secondary RESET (mockup consistency) */}
           <div className="flex gap-2 pt-2">
-            <Button 
-              type="submit" 
-              className="bg-teal-600 hover:bg-teal-700 text-white"
-            >
+            <Button type="submit" variant="primary">
               <Search className="mr-2 h-4 w-4" />
               SEARCH
             </Button>
-            
-            <Button 
-              type="button" 
-              variant="outline"
-              onClick={onReset}
-            >
+            <Button type="button" variant="secondary" onClick={onReset}>
               <RotateCcw className="mr-2 h-4 w-4" />
               RESET
             </Button>

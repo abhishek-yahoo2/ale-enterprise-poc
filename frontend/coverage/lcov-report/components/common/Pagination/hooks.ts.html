@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/15</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/15</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -136,35 +136,35 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -191,35 +191,35 @@ interface UsePaginationReturn {
     setPageSize: (size: number) =&gt; void;
 }
 &nbsp;
-export const usePagination = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >({</span></span>
-    initialPage = <span class="branch-0 cbranch-no" title="branch not covered" >1,</span>
-    pageSize = <span class="branch-0 cbranch-no" title="branch not covered" >10,</span>
-    totalItems = <span class="branch-0 cbranch-no" title="branch not covered" >0,</span>
-}: UsePaginationProps = <span class="branch-0 cbranch-no" title="branch not covered" >{})</span>: UsePaginationReturn =&gt; {
-    const [currentPage, setCurrentPage] = <span class="cstat-no" title="statement not covered" >useState(initialPage);</span>
-    const [currentPageSize, setCurrentPageSize] = <span class="cstat-no" title="statement not covered" >useState(pageSize);</span>
+export const usePagination = ({
+    initialPage = 1,
+    pageSize = 10,
+    totalItems = 0,
+}: UsePaginationProps = {}): UsePaginationReturn =&gt; {
+    const [currentPage, setCurrentPage] = useState(initialPage);
+    const [currentPageSize, setCurrentPageSize] = useState(pageSize);
 &nbsp;
-    const totalPages = <span class="cstat-no" title="statement not covered" >Math.ceil(totalItems / currentPageSize) || 1;</span>
+    const totalPages = Math.ceil(totalItems / currentPageSize) || 1;
 &nbsp;
-    const goToPage = <span class="cstat-no" title="statement not covered" >useCallback(<span class="fstat-no" title="function not covered" >(p</span>age: number) =&gt; {</span>
-        const pageNum = <span class="cstat-no" title="statement not covered" >Math.max(1, Math.min(page, totalPages));</span>
-<span class="cstat-no" title="statement not covered" >        setCurrentPage(pageNum);</span>
+    const goToPage = useCallback((page: number) =&gt; {
+        const pageNum = Math.max(1, Math.min(page, totalPages));
+        setCurrentPage(pageNum);
     }, [totalPages]);
 &nbsp;
-    const nextPage = <span class="cstat-no" title="statement not covered" >useCallback(<span class="fstat-no" title="function not covered" >() =</span>&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        goToPage(currentPage + 1);</span>
+    const nextPage = useCallback(() =&gt; {
+        goToPage(currentPage + 1);
     }, [currentPage, goToPage]);
 &nbsp;
-    const prevPage = <span class="cstat-no" title="statement not covered" >useCallback(<span class="fstat-no" title="function not covered" >() =</span>&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        goToPage(currentPage - 1);</span>
+    const prevPage = useCallback(() =&gt; {
+        goToPage(currentPage - 1);
     }, [currentPage, goToPage]);
 &nbsp;
-    const handleSetPageSize = <span class="cstat-no" title="statement not covered" >useCallback(<span class="fstat-no" title="function not covered" >(s</span>ize: number) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        setCurrentPageSize(Math.max(1, size));</span>
-<span class="cstat-no" title="statement not covered" >        setCurrentPage(1);</span>
+    const handleSetPageSize = useCallback((size: number) =&gt; {
+        setCurrentPageSize(Math.max(1, size));
+        setCurrentPage(1);
     }, []);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return {</span>
+    return {
         currentPage,
         pageSize: currentPageSize,
         totalPages,
@@ -235,7 +235,7 @@ export const usePagination = <span class="cstat-no" title="statement not covered
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-02-18T06:40:40.332Z
+                at 2026-02-18T10:20:07.326Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

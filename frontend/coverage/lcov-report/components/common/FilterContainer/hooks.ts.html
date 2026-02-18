@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/15</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/12</span>
+                <span class='fraction'>12/12</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -103,33 +103,33 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { useState, useCallback, useMemo } from 'react';
 &nbsp;
@@ -137,33 +137,33 @@ export interface FilterState {
     [key: string]: string | number | boolean | string[];
 }
 &nbsp;
-export const useFilterState = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(i</span>nitialFilters: FilterState = <span class="branch-0 cbranch-no" title="branch not covered" >{})</span> =&gt; {</span>
-    const [filters, setFilters] = <span class="cstat-no" title="statement not covered" >useState&lt;FilterState&gt;(initialFilters);</span>
+export const useFilterState = (initialFilters: FilterState = {}) =&gt; {
+    const [filters, setFilters] = useState&lt;FilterState&gt;(initialFilters);
 &nbsp;
-    const updateFilter = <span class="cstat-no" title="statement not covered" >useCallback(<span class="fstat-no" title="function not covered" >(k</span>ey: string, value: any) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        setFilters(<span class="fstat-no" title="function not covered" >(p</span>rev) =&gt; (<span class="cstat-no" title="statement not covered" >{</span></span>
+    const updateFilter = useCallback((key: string, value: any) =&gt; {
+        setFilters((prev) =&gt; ({
             ...prev,
             [key]: value,
         }));
     }, []);
 &nbsp;
-    const clearFilters = <span class="cstat-no" title="statement not covered" >useCallback(<span class="fstat-no" title="function not covered" >() =</span>&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        setFilters(initialFilters);</span>
+    const clearFilters = useCallback(() =&gt; {
+        setFilters(initialFilters);
     }, [initialFilters]);
 &nbsp;
-    const setMultipleFilters = <span class="cstat-no" title="statement not covered" >useCallback(<span class="fstat-no" title="function not covered" >(n</span>ewFilters: Partial&lt;FilterState&gt;) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        setFilters(<span class="fstat-no" title="function not covered" >(p</span>rev) =&gt; (<span class="cstat-no" title="statement not covered" >{</span></span>
+    const setMultipleFilters = useCallback((newFilters: Partial&lt;FilterState&gt;) =&gt; {
+        setFilters((prev) =&gt; ({
             ...prev,
             ...newFilters,
         }));
     }, []);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return { filters, updateFilter, clearFilters, setMultipleFilters };</span>
+    return { filters, updateFilter, clearFilters, setMultipleFilters };
 };
 &nbsp;
-export const useFilteredData = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >&lt;T,&gt;(d</span>ata: T[], filters: FilterState, filterFn: (item: T, filters: FilterState) =&gt; boolean) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    return useMemo(<span class="fstat-no" title="function not covered" >() =</span>&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        return data.filter(<span class="fstat-no" title="function not covered" >(i</span>tem) =&gt; <span class="cstat-no" title="statement not covered" >filterFn(item, filters))</span>;</span>
+export const useFilteredData = &lt;T,&gt;(data: T[], filters: FilterState, filterFn: (item: T, filters: FilterState) =&gt; boolean) =&gt; {
+    return useMemo(() =&gt; {
+        return data.filter((item) =&gt; filterFn(item, filters));
     }, [data, filters, filterFn]);
 };</pre></td></tr></table></pre>
 
@@ -172,7 +172,7 @@ export const useFilteredData = <span class="cstat-no" title="statement not cover
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-02-18T06:40:40.332Z
+                at 2026-02-18T10:20:07.326Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

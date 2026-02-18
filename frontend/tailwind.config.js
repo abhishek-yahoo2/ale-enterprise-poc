@@ -6,10 +6,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#0a7a82',
-        'primary-light': '#0d9ba6',
-        'primary-dark': '#084d52',
-        'secondary': '#f59e0b',
+        /* ALE canonical teal (mockup consistency report) */
+        primary: '#006C6A',
+        'primary-light': '#008080',
+        'primary-dark': '#004C4C',
+        /* Sidebar: light grey + teal active */
+        'ale-sidebar': '#F0F0F0',
+        'ale-sidebar-active': '#E6F0F0',
+        secondary: '#f59e0b',
         'neutral-50': '#f9fafb',
         'neutral-100': '#f3f4f6',
         'neutral-200': '#e5e7eb',
@@ -20,10 +24,10 @@ export default {
         'neutral-700': '#374151',
         'neutral-800': '#1f2937',
         'neutral-900': '#111827',
-        'error': '#dc2626',
-        'success': '#16a34a',
-        'warning': '#f59e0b',
-        'info': '#3b82f6',
+        error: '#dc2626',
+        success: '#16a34a',
+        warning: '#f59e0b',
+        info: '#3b82f6',
       },
     },
   },

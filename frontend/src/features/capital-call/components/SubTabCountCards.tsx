@@ -32,38 +32,13 @@ export const SubTabCountCards: React.FC = () => {
   
   const { data: counts, isLoading } = useTabCounts();
   
-  // Define card configurations matching UI mockup
+  /* Unified style: all cards primary teal (mockup consistency report) */
   const cardConfigs = [
-    {
-      id: ForReviewSubTab.SSI_VERIFICATION_NEEDED,
-      label: 'SSI Verification Needed',
-      bgColor: 'bg-teal-700',
-      hoverColor: 'hover:bg-teal-800'
-    },
-    {
-      id: ForReviewSubTab.TRANSACTION_TO_BE_PROCESSED,
-      label: 'Transaction To Be Processed',
-      bgColor: 'bg-green-600',
-      hoverColor: 'hover:bg-green-700'
-    },
-    {
-      id: ForReviewSubTab.MISSING_FUND_DOCUMENT,
-      label: 'Missing Fund Document',
-      bgColor: 'bg-green-600',
-      hoverColor: 'hover:bg-green-700'
-    },
-    {
-      id: ForReviewSubTab.MISSING_CLIENT_INSTRUCTION,
-      label: 'Missing Client Instruction',
-      bgColor: 'bg-green-600',
-      hoverColor: 'hover:bg-green-700'
-    },
-    {
-      id: ForReviewSubTab.MISSING_CLIENT_AND_FUND_INSTRUCTION,
-      label: 'Missing Client And Fund Instruction',
-      bgColor: 'bg-green-600',
-      hoverColor: 'hover:bg-green-700'
-    }
+    { id: ForReviewSubTab.SSI_VERIFICATION_NEEDED, label: 'SSI Verification Needed' },
+    { id: ForReviewSubTab.TRANSACTION_TO_BE_PROCESSED, label: 'Transaction To Be Processed' },
+    { id: ForReviewSubTab.MISSING_FUND_DOCUMENT, label: 'Missing Fund Document' },
+    { id: ForReviewSubTab.MISSING_CLIENT_INSTRUCTION, label: 'Missing Client Instruction' },
+    { id: ForReviewSubTab.MISSING_CLIENT_AND_FUND_INSTRUCTION, label: 'Missing Client And Fund Instruction' },
   ];
   
   // Get count for specific sub-tab
@@ -77,7 +52,7 @@ export const SubTabCountCards: React.FC = () => {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center py-8">
-        <Loader2 className="h-6 w-6 animate-spin text-teal-600" />
+        <Loader2 className="h-6 w-6 animate-spin text-primary" />
       </div>
     );
   }
@@ -92,13 +67,12 @@ export const SubTabCountCards: React.FC = () => {
         
         return (
           <Card
-          title={config.label}
+            title={config.label}
             key={config.id}
             className={`
               cursor-pointer transition-all
-              ${isActive ? 'ring-2 ring-teal-600 shadow-lg' : 'shadow'}
-              ${config.bgColor} ${config.hoverColor}
-              text-white
+              ${isActive ? 'ring-2 ring-primary shadow-lg' : 'shadow'}
+              bg-primary hover:bg-primary-dark text-white
             `}
             onClick={() => setActiveSubTab(config.id)}
           >

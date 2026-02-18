@@ -112,21 +112,42 @@ export const Router = () => {
           {/* Redirect root to dashboard */}
           <Route path="/" element={<Navigate to="/dashboard" replace />} />
 
-          {/* 404 */}
-          <Route path="*" element={<Navigate to="/dashboard" replace />} />
-          <Route path="/accounting-cash" element={<AccountingCashLanding />} />
+          {/* Accounting & Cash: same AppLayout (header + sidebar) */}
+          <Route
+            path="/accounting-cash"
+            element={
+              <ProtectedRoute>
+                <AccountingCashLanding />
+              </ProtectedRoute>
+            }
+          />
           <Route
             path="/accounting-cash/private-equity"
-            element={<PrivateEquityLanding />}
+            element={
+              <ProtectedRoute>
+                <PrivateEquityLanding />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/accounting-cash/private-equity/capital-call"
-            element={<CapitalCallPage />}
+            element={
+              <ProtectedRoute>
+                <CapitalCallPage />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/accounting-cash/private-equity/capital-call/:id"
-            element={<CapitalCallDetailsPage />}
+            element={
+              <ProtectedRoute>
+                <CapitalCallDetailsPage />
+              </ProtectedRoute>
+            }
           />
+
+          {/* 404 */}
+          <Route path="*" element={<Navigate to="/dashboard" replace />} />
         </Routes>
       </Suspense>
     </BrowserRouter>

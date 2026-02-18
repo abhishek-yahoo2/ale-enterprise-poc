@@ -1,40 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1771396840368" clover="3.2.0">
-  <project timestamp="1771396840368" name="All files">
-    <metrics statements="1296" coveredstatements="881" conditionals="586" coveredconditionals="340" methods="547" coveredmethods="299" elements="2429" coveredelements="1520" complexity="0" loc="1296" ncloc="1296" packages="36" files="85" classes="85"/>
+<coverage generated="1771410007353" clover="3.2.0">
+  <project timestamp="1771410007353" name="All files">
+    <metrics statements="873" coveredstatements="829" conditionals="374" coveredconditionals="307" methods="347" coveredmethods="320" elements="1594" coveredelements="1456" complexity="0" loc="873" ncloc="873" packages="34" files="74" classes="74"/>
     <package name="app">
-      <metrics statements="26" coveredstatements="18" conditionals="2" coveredconditionals="1" methods="13" coveredmethods="5"/>
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="App.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/app/App.tsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="9" count="2" type="stmt"/>
-      </file>
-      <file name="Router.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/app/Router.tsx">
-        <metrics statements="25" coveredstatements="17" conditionals="2" coveredconditionals="1" methods="12" coveredmethods="4"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="35" count="1" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-        <line num="41" count="2" type="stmt"/>
-        <line num="43" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="44" count="2" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
-        <line num="50" count="1" type="stmt"/>
-        <line num="51" count="3" type="stmt"/>
       </file>
     </package>
     <package name="app.providers">
@@ -113,31 +85,31 @@
       </file>
     </package>
     <package name="components.common.EmptyState">
-      <metrics statements="15" coveredstatements="2" conditionals="6" coveredconditionals="6" methods="7" coveredmethods="1"/>
+      <metrics statements="15" coveredstatements="15" conditionals="6" coveredconditionals="6" methods="7" coveredmethods="7"/>
       <file name="EmptyState.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/components/common/EmptyState/EmptyState.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
         <line num="14" count="1" type="stmt"/>
         <line num="20" count="5" type="stmt"/>
       </file>
       <file name="hooks.ts" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/components/common/EmptyState/hooks.ts">
-        <metrics statements="13" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
+        <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
+        <line num="13" count="12" type="stmt"/>
+        <line num="15" count="12" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="19" count="12" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="23" count="12" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="27" count="12" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="32" count="12" type="stmt"/>
       </file>
     </package>
     <package name="components.common.ErrorBoundary">
-      <metrics statements="29" coveredstatements="8" conditionals="4" coveredconditionals="2" methods="12" coveredmethods="5"/>
+      <metrics statements="29" coveredstatements="28" conditionals="4" coveredconditionals="4" methods="12" coveredmethods="11"/>
       <file name="ErrorBoundary.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/components/common/ErrorBoundary/ErrorBoundary.tsx">
         <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
         <line num="14" count="8" type="stmt"/>
@@ -150,28 +122,28 @@
         <line num="39" count="8" type="stmt"/>
       </file>
       <file name="hooks.ts" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/components/common/ErrorBoundary/hooks.ts">
-        <metrics statements="21" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="7" coveredmethods="0"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
+        <metrics statements="21" coveredstatements="20" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="6"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="16" type="stmt"/>
+        <line num="14" count="16" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="21" count="16" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="28" count="16" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
         <line num="39" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="50" count="0" type="stmt"/>
-        <line num="52" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="54" count="0" type="stmt"/>
-        <line num="58" count="0" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="6" type="stmt"/>
+        <line num="45" count="6" type="stmt"/>
+        <line num="47" count="6" type="stmt"/>
+        <line num="48" count="3" type="stmt"/>
+        <line num="49" count="3" type="stmt"/>
+        <line num="50" count="3" type="stmt"/>
+        <line num="52" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="54" count="3" type="stmt"/>
+        <line num="58" count="6" type="stmt"/>
       </file>
     </package>
     <package name="components.common.ExportButton">
@@ -213,7 +185,7 @@
       </file>
     </package>
     <package name="components.common.FilterContainer">
-      <metrics statements="22" coveredstatements="10" conditionals="4" coveredconditionals="3" methods="12" coveredmethods="3"/>
+      <metrics statements="22" coveredstatements="22" conditionals="4" coveredconditionals="4" methods="12" coveredmethods="12"/>
       <file name="FilterContainer.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/components/common/FilterContainer/FilterContainer.tsx">
         <metrics statements="10" coveredstatements="10" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
         <line num="9" count="1" type="stmt"/>
@@ -228,23 +200,23 @@
         <line num="26" count="19" type="stmt"/>
       </file>
       <file name="hooks.ts" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/components/common/FilterContainer/hooks.ts">
-        <metrics statements="12" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="9" coveredmethods="0"/>
-        <line num="7" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
+        <metrics statements="12" coveredstatements="12" conditionals="1" coveredconditionals="1" methods="9" coveredmethods="9"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="17" count="9" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="21" count="9" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="28" count="9" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
       </file>
     </package>
     <package name="components.common.LoadingSpinner">
-      <metrics statements="35" coveredstatements="5" conditionals="12" coveredconditionals="7" methods="14" coveredmethods="1"/>
+      <metrics statements="35" coveredstatements="35" conditionals="12" coveredconditionals="12" methods="14" coveredmethods="14"/>
       <file name="LoadingSpinner.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/components/common/LoadingSpinner/LoadingSpinner.tsx">
         <metrics statements="5" coveredstatements="5" conditionals="7" coveredconditionals="7" methods="1" coveredmethods="1"/>
         <line num="25" count="1" type="stmt"/>
@@ -254,41 +226,41 @@
         <line num="51" count="4" type="stmt"/>
       </file>
       <file name="hooks.ts" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/components/common/LoadingSpinner/hooks.ts">
-        <metrics statements="30" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="13" coveredmethods="0"/>
-        <line num="6" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="25" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="54" count="0" type="stmt"/>
-        <line num="55" count="0" type="stmt"/>
-        <line num="56" count="0" type="stmt"/>
-        <line num="58" count="0" type="stmt"/>
-        <line num="59" count="0" type="stmt"/>
-        <line num="60" count="0" type="stmt"/>
-        <line num="61" count="0" type="stmt"/>
-        <line num="62" count="0" type="stmt"/>
-        <line num="63" count="0" type="stmt"/>
-        <line num="65" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="66" count="0" type="stmt"/>
-        <line num="68" count="0" type="stmt"/>
-        <line num="72" count="0" type="stmt"/>
+        <metrics statements="30" coveredstatements="30" conditionals="5" coveredconditionals="5" methods="13" coveredmethods="13"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="9" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="13" count="9" type="stmt"/>
+        <line num="25" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="9" type="stmt"/>
+        <line num="28" count="9" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="32" count="9" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="36" count="9" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="42" count="9" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="55" count="7" type="stmt"/>
+        <line num="56" count="7" type="stmt"/>
+        <line num="58" count="7" type="stmt"/>
+        <line num="59" count="3" type="stmt"/>
+        <line num="60" count="3" type="stmt"/>
+        <line num="61" count="3" type="stmt"/>
+        <line num="62" count="3" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="65" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="66" count="2" type="stmt"/>
+        <line num="68" count="3" type="stmt"/>
+        <line num="72" count="7" type="stmt"/>
       </file>
     </package>
     <package name="components.common.Pagination">
-      <metrics statements="37" coveredstatements="20" conditionals="14" coveredconditionals="6" methods="12" coveredmethods="6"/>
+      <metrics statements="37" coveredstatements="35" conditionals="14" coveredconditionals="12" methods="12" coveredmethods="11"/>
       <file name="Pagination.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/components/common/Pagination/Pagination.tsx">
         <metrics statements="22" coveredstatements="20" conditionals="8" coveredconditionals="6" methods="7" coveredmethods="6"/>
         <line num="9" count="1" type="stmt"/>
@@ -315,35 +287,35 @@
         <line num="65" count="2" type="stmt"/>
       </file>
       <file name="hooks.ts" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/components/common/Pagination/hooks.ts">
-        <metrics statements="15" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="5" coveredmethods="0"/>
-        <line num="19" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="27" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
+        <metrics statements="15" coveredstatements="15" conditionals="6" coveredconditionals="6" methods="5" coveredmethods="5"/>
+        <line num="19" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="24" count="13" type="stmt"/>
+        <line num="25" count="13" type="stmt"/>
+        <line num="27" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="13" type="stmt"/>
+        <line num="30" count="5" type="stmt"/>
+        <line num="31" count="5" type="stmt"/>
+        <line num="34" count="13" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="38" count="13" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="42" count="13" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="47" count="13" type="stmt"/>
       </file>
     </package>
     <package name="components.layout">
-      <metrics statements="21" coveredstatements="19" conditionals="8" coveredconditionals="7" methods="7" coveredmethods="5"/>
+      <metrics statements="30" coveredstatements="30" conditionals="14" coveredconditionals="14" methods="10" coveredmethods="10"/>
       <file name="AppLayout.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/components/layout/AppLayout.tsx">
-        <metrics statements="7" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
         <line num="10" count="1" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
+        <line num="11" count="7" type="stmt"/>
+        <line num="13" count="7" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="7" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
       </file>
       <file name="Header.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/components/layout/Header.tsx">
         <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
@@ -356,18 +328,27 @@
         <line num="19" count="4" type="stmt"/>
       </file>
       <file name="Sidebar.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/components/layout/Sidebar.tsx">
-        <metrics statements="7" coveredstatements="7" conditionals="6" coveredconditionals="5" methods="2" coveredmethods="2"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="6" type="stmt"/>
-        <line num="21" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="22" count="5" type="stmt"/>
-        <line num="47" count="20" type="stmt"/>
-        <line num="72" count="1" type="stmt"/>
+        <metrics statements="16" coveredstatements="16" conditionals="12" coveredconditionals="12" methods="4" coveredmethods="4"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="6" type="stmt"/>
+        <line num="29" count="6" type="stmt"/>
+        <line num="30" count="48" type="cond" truecount="4" falsecount="0"/>
+        <line num="31" count="36" type="stmt"/>
+        <line num="36" count="6" type="stmt"/>
+        <line num="46" count="24" type="stmt"/>
+        <line num="47" count="24" type="stmt"/>
+        <line num="66" count="6" type="stmt"/>
+        <line num="85" count="24" type="stmt"/>
+        <line num="86" count="24" type="stmt"/>
+        <line num="87" count="24" type="stmt"/>
+        <line num="111" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="112" count="1" type="stmt"/>
+        <line num="116" count="5" type="stmt"/>
       </file>
     </package>
     <package name="components.ui">
-      <metrics statements="161" coveredstatements="149" conditionals="92" coveredconditionals="65" methods="50" coveredmethods="46"/>
+      <metrics statements="115" coveredstatements="112" conditionals="62" coveredconditionals="51" methods="40" coveredmethods="40"/>
       <file name="Badge.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/components/ui/Badge.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="9" count="1" type="stmt"/>
@@ -516,68 +497,18 @@
         <line num="10" count="6" type="stmt"/>
         <line num="20" count="6" type="stmt"/>
       </file>
-      <file name="popover.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/components/ui/popover.tsx">
-        <metrics statements="46" coveredstatements="37" conditionals="30" coveredconditionals="14" methods="10" coveredmethods="6"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="34" count="4" type="stmt"/>
-        <line num="35" count="4" type="stmt"/>
-        <line num="37" count="4" type="stmt"/>
-        <line num="38" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="40" count="4" type="stmt"/>
-        <line num="41" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="45" count="4" type="stmt"/>
-        <line num="57" count="1" type="stmt"/>
-        <line num="61" count="4" type="stmt"/>
-        <line num="62" count="4" type="cond" truecount="1" falsecount="1"/>
-        <line num="64" count="4" type="stmt"/>
-        <line num="67" count="0" type="stmt"/>
-        <line num="80" count="1" type="stmt"/>
-        <line num="86" count="6" type="stmt"/>
-        <line num="87" count="6" type="stmt"/>
-        <line num="89" count="6" type="cond" truecount="1" falsecount="1"/>
-        <line num="90" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="92" count="4" type="stmt"/>
-        <line num="98" count="4" type="stmt"/>
-        <line num="99" count="2" type="stmt"/>
-        <line num="100" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="102" count="2" type="stmt"/>
-        <line num="103" count="2" type="stmt"/>
-        <line num="104" count="2" type="stmt"/>
-        <line num="106" count="2" type="stmt"/>
-        <line num="108" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="109" count="0" type="stmt"/>
-        <line num="110" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="111" count="0" type="stmt"/>
-        <line num="114" count="2" type="stmt"/>
-        <line num="121" count="4" type="stmt"/>
-        <line num="122" count="2" type="stmt"/>
-        <line num="123" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="128" count="0" type="stmt"/>
-        <line num="132" count="2" type="stmt"/>
-        <line num="133" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="134" count="0" type="stmt"/>
-        <line num="138" count="2" type="stmt"/>
-        <line num="139" count="2" type="stmt"/>
-        <line num="141" count="2" type="stmt"/>
-        <line num="142" count="2" type="stmt"/>
-        <line num="143" count="2" type="stmt"/>
-        <line num="147" count="4" type="stmt"/>
-      </file>
     </package>
     <package name="features.accounting-cash">
-      <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+      <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
       <file name="AccountingCashLanding.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/accounting-cash/AccountingCashLanding.tsx">
-        <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+        <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
         <line num="19" count="1" type="stmt"/>
         <line num="20" count="4" type="stmt"/>
         <line num="23" count="4" type="stmt"/>
         <line num="47" count="4" type="stmt"/>
-        <line num="54" count="0" type="stmt"/>
-        <line num="79" count="12" type="stmt"/>
-        <line num="81" count="12" type="stmt"/>
-        <line num="89" count="0" type="stmt"/>
+        <line num="54" count="12" type="stmt"/>
+        <line num="56" count="12" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
       </file>
     </package>
     <package name="features.accounting-cash.private-equity">
@@ -623,10 +554,10 @@
         <line num="81" count="100" type="cond" truecount="1" falsecount="1"/>
         <line num="87" count="7" type="cond" truecount="2" falsecount="0"/>
         <line num="88" count="1" type="stmt"/>
-        <line num="89" count="530" type="stmt"/>
-        <line num="90" count="530" type="cond" truecount="1" falsecount="1"/>
-        <line num="92" count="530" type="cond" truecount="2" falsecount="0"/>
-        <line num="93" count="269" type="cond" truecount="1" falsecount="1"/>
+        <line num="89" count="531" type="stmt"/>
+        <line num="90" count="531" type="cond" truecount="1" falsecount="1"/>
+        <line num="92" count="531" type="cond" truecount="2" falsecount="0"/>
+        <line num="93" count="280" type="cond" truecount="1" falsecount="1"/>
         <line num="94" count="0" type="stmt"/>
         <line num="99" count="7" type="cond" truecount="1" falsecount="1"/>
         <line num="100" count="7" type="cond" truecount="1" falsecount="1"/>
@@ -645,7 +576,7 @@
       </file>
     </package>
     <package name="features.alternative-data.components">
-      <metrics statements="53" coveredstatements="21" conditionals="32" coveredconditionals="21" methods="25" coveredmethods="6"/>
+      <metrics statements="24" coveredstatements="21" conditionals="24" coveredconditionals="21" methods="10" coveredmethods="6"/>
       <file name="AlternativeDataFilters.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/alternative-data/components/AlternativeDataFilters.tsx">
         <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
         <line num="9" count="1" type="stmt"/>
@@ -676,79 +607,6 @@
         <line num="94" count="0" type="stmt"/>
         <line num="104" count="0" type="stmt"/>
       </file>
-      <file name="ColumnPreferenceDialog.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/alternative-data/components/ColumnPreferenceDialog.tsx">
-        <metrics statements="29" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="15" coveredmethods="0"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="16" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="28" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="40" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="51" count="0" type="stmt"/>
-        <line num="52" count="0" type="stmt"/>
-        <line num="57" count="0" type="stmt"/>
-        <line num="68" count="0" type="stmt"/>
-        <line num="81" count="0" type="stmt"/>
-        <line num="89" count="0" type="stmt"/>
-        <line num="110" count="0" type="stmt"/>
-        <line num="112" count="0" type="stmt"/>
-        <line num="113" count="0" type="stmt"/>
-        <line num="116" count="0" type="stmt"/>
-        <line num="129" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="features.alternative-data.hooks">
-      <metrics statements="35" coveredstatements="15" conditionals="4" coveredconditionals="0" methods="19" coveredmethods="5"/>
-      <file name="useAlternativeDataSearch.ts" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/alternative-data/hooks/useAlternativeDataSearch.ts">
-        <metrics statements="35" coveredstatements="15" conditionals="4" coveredconditionals="0" methods="19" coveredmethods="5"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="6" type="stmt"/>
-        <line num="15" count="6" type="stmt"/>
-        <line num="17" count="5" type="stmt"/>
-        <line num="22" count="6" type="stmt"/>
-        <line num="23" count="2" type="stmt"/>
-        <line num="30" count="6" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="37" count="6" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="44" count="6" type="stmt"/>
-        <line num="45" count="1" type="stmt"/>
-        <line num="51" count="6" type="stmt"/>
-        <line num="52" count="6" type="stmt"/>
-        <line num="65" count="1" type="stmt"/>
-        <line num="66" count="0" type="stmt"/>
-        <line num="68" count="0" type="stmt"/>
-        <line num="72" count="1" type="stmt"/>
-        <line num="73" count="0" type="stmt"/>
-        <line num="75" count="0" type="stmt"/>
-        <line num="77" count="0" type="stmt"/>
-        <line num="79" count="0" type="stmt"/>
-        <line num="80" count="0" type="stmt"/>
-        <line num="83" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="88" count="1" type="stmt"/>
-        <line num="89" count="0" type="stmt"/>
-        <line num="90" count="0" type="stmt"/>
-        <line num="92" count="0" type="stmt"/>
-        <line num="93" count="0" type="stmt"/>
-        <line num="94" count="0" type="stmt"/>
-        <line num="95" count="0" type="stmt"/>
-        <line num="96" count="0" type="stmt"/>
-        <line num="97" count="0" type="stmt"/>
-        <line num="98" count="0" type="stmt"/>
-        <line num="101" count="0" type="cond" truecount="0" falsecount="2"/>
-      </file>
     </package>
     <package name="features.alternative-data.pages">
       <metrics statements="7" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1"/>
@@ -776,72 +634,46 @@
       </file>
     </package>
     <package name="features.auth">
-      <metrics statements="27" coveredstatements="9" conditionals="8" coveredconditionals="2" methods="7" coveredmethods="1"/>
+      <metrics statements="27" coveredstatements="27" conditionals="8" coveredconditionals="8" methods="7" coveredmethods="7"/>
       <file name="LoginPage.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/auth/LoginPage.tsx">
-        <metrics statements="27" coveredstatements="9" conditionals="8" coveredconditionals="2" methods="7" coveredmethods="1"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="36" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="53" count="1" type="stmt"/>
-        <line num="80" count="0" type="stmt"/>
-        <line num="92" count="0" type="stmt"/>
-        <line num="101" count="0" type="stmt"/>
-        <line num="104" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="features.capital-call.api">
-      <metrics statements="20" coveredstatements="15" conditionals="2" coveredconditionals="0" methods="9" coveredmethods="7"/>
-      <file name="capitalCallApi.ts" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/api/capitalCallApi.ts">
-        <metrics statements="20" coveredstatements="15" conditionals="2" coveredconditionals="0" methods="9" coveredmethods="7"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="54" count="1" type="stmt"/>
-        <line num="55" count="1" type="stmt"/>
-        <line num="67" count="0" type="stmt"/>
-        <line num="68" count="0" type="stmt"/>
-        <line num="76" count="1" type="stmt"/>
-        <line num="77" count="1" type="stmt"/>
-        <line num="85" count="1" type="stmt"/>
-        <line num="86" count="1" type="stmt"/>
-        <line num="94" count="1" type="stmt"/>
-        <line num="95" count="1" type="stmt"/>
-        <line num="103" count="1" type="stmt"/>
+        <metrics statements="27" coveredstatements="27" conditionals="8" coveredconditionals="8" methods="7" coveredmethods="7"/>
+        <line num="7" count="19" type="stmt"/>
+        <line num="8" count="19" type="stmt"/>
+        <line num="9" count="19" type="stmt"/>
+        <line num="10" count="19" type="stmt"/>
+        <line num="11" count="19" type="stmt"/>
+        <line num="12" count="19" type="stmt"/>
+        <line num="14" count="19" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="30" count="19" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="36" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="53" count="19" type="stmt"/>
+        <line num="80" count="4" type="stmt"/>
+        <line num="92" count="4" type="stmt"/>
+        <line num="101" count="1" type="stmt"/>
         <line num="104" count="1" type="stmt"/>
-        <line num="112" count="1" type="stmt"/>
-        <line num="120" count="1" type="stmt"/>
-        <line num="126" count="1" type="stmt"/>
-        <line num="129" count="1" type="stmt"/>
       </file>
     </package>
     <package name="features.capital-call.components">
-      <metrics statements="219" coveredstatements="124" conditionals="151" coveredconditionals="77" methods="96" coveredmethods="39"/>
+      <metrics statements="100" coveredstatements="88" conditionals="84" coveredconditionals="58" methods="37" coveredmethods="31"/>
       <file name="ApprovalDialog.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/components/ApprovalDialog.tsx">
-        <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="17" count="1" type="stmt"/>
-        <line num="22" count="4" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
+        <line num="22" count="6" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
       </file>
       <file name="BreakdownSection.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/components/BreakdownSection.tsx">
         <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="5"/>
@@ -853,131 +685,6 @@
         <line num="50" count="8" type="stmt"/>
         <line num="60" count="8" type="stmt"/>
         <line num="64" count="0" type="stmt"/>
-      </file>
-      <file name="CapitalCallFilters.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/components/CapitalCallFilters.tsx">
-        <metrics statements="33" coveredstatements="16" conditionals="39" coveredconditionals="28" methods="20" coveredmethods="4"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="31" count="4" type="stmt"/>
-        <line num="34" count="4" type="stmt"/>
-        <line num="35" count="4" type="stmt"/>
-        <line num="36" count="4" type="stmt"/>
-        <line num="38" count="4" type="stmt"/>
-        <line num="41" count="4" type="stmt"/>
-        <line num="46" count="4" type="stmt"/>
-        <line num="47" count="4" type="stmt"/>
-        <line num="48" count="4" type="stmt"/>
-        <line num="51" count="4" type="cond" truecount="3" falsecount="0"/>
-        <line num="54" count="4" type="stmt"/>
-        <line num="55" count="0" type="stmt"/>
-        <line num="59" count="4" type="stmt"/>
-        <line num="60" count="0" type="stmt"/>
-        <line num="61" count="0" type="stmt"/>
-        <line num="65" count="4" type="stmt"/>
-        <line num="66" count="0" type="stmt"/>
-        <line num="70" count="4" type="stmt"/>
-        <line num="72" count="0" type="stmt"/>
-        <line num="75" count="4" type="stmt"/>
-        <line num="80" count="0" type="stmt"/>
-        <line num="115" count="0" type="stmt"/>
-        <line num="139" count="0" type="stmt"/>
-        <line num="157" count="0" type="stmt"/>
-        <line num="170" count="0" type="stmt"/>
-        <line num="204" count="0" type="stmt"/>
-        <line num="233" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="255" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="267" count="0" type="stmt"/>
-        <line num="296" count="0" type="stmt"/>
-        <line num="310" count="0" type="stmt"/>
-        <line num="324" count="0" type="stmt"/>
-      </file>
-      <file name="CapitalCallGrid.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/components/CapitalCallGrid.tsx">
-        <metrics statements="86" coveredstatements="37" conditionals="28" coveredconditionals="5" methods="39" coveredmethods="10"/>
-        <line num="50" count="1" type="stmt"/>
-        <line num="51" count="2" type="stmt"/>
-        <line num="54" count="2" type="stmt"/>
-        <line num="55" count="2" type="stmt"/>
-        <line num="56" count="2" type="stmt"/>
-        <line num="57" count="2" type="stmt"/>
-        <line num="58" count="2" type="stmt"/>
-        <line num="59" count="2" type="stmt"/>
-        <line num="61" count="2" type="stmt"/>
-        <line num="65" count="2" type="stmt"/>
-        <line num="66" count="2" type="stmt"/>
-        <line num="73" count="2" type="stmt"/>
-        <line num="74" count="2" type="stmt"/>
-        <line num="75" count="2" type="stmt"/>
-        <line num="76" count="2" type="stmt"/>
-        <line num="77" count="2" type="stmt"/>
-        <line num="78" count="2" type="stmt"/>
-        <line num="80" count="2" type="stmt"/>
-        <line num="81" count="2" type="stmt"/>
-        <line num="82" count="2" type="stmt"/>
-        <line num="85" count="0" type="stmt"/>
-        <line num="86" count="0" type="stmt"/>
-        <line num="92" count="2" type="stmt"/>
-        <line num="93" count="2" type="stmt"/>
-        <line num="96" count="2" type="stmt"/>
-        <line num="98" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="99" count="0" type="stmt"/>
-        <line num="100" count="0" type="stmt"/>
-        <line num="101" count="0" type="stmt"/>
-        <line num="105" count="0" type="stmt"/>
-        <line num="109" count="2" type="stmt"/>
-        <line num="110" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="112" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="113" count="0" type="stmt"/>
-        <line num="116" count="0" type="stmt"/>
-        <line num="121" count="2" type="stmt"/>
-        <line num="122" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="123" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="129" count="2" type="stmt"/>
-        <line num="130" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="131" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="132" count="0" type="stmt"/>
-        <line num="136" count="2" type="stmt"/>
-        <line num="137" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="138" count="0" type="stmt"/>
-        <line num="139" count="0" type="stmt"/>
-        <line num="141" count="0" type="stmt"/>
-        <line num="146" count="2" type="stmt"/>
-        <line num="147" count="0" type="stmt"/>
-        <line num="155" count="2" type="stmt"/>
-        <line num="156" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="157" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="158" count="2" type="stmt"/>
-        <line num="159" count="2" type="stmt"/>
-        <line num="161" count="2" type="stmt"/>
-        <line num="162" count="2" type="stmt"/>
-        <line num="164" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="165" count="2" type="stmt"/>
-        <line num="175" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="176" count="0" type="stmt"/>
-        <line num="184" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="185" count="0" type="stmt"/>
-        <line num="193" count="0" type="stmt"/>
-        <line num="204" count="0" type="stmt"/>
-        <line num="211" count="0" type="stmt"/>
-        <line num="218" count="0" type="stmt"/>
-        <line num="225" count="0" type="stmt"/>
-        <line num="232" count="0" type="stmt"/>
-        <line num="239" count="0" type="stmt"/>
-        <line num="246" count="0" type="stmt"/>
-        <line num="253" count="0" type="stmt"/>
-        <line num="260" count="0" type="stmt"/>
-        <line num="267" count="0" type="stmt"/>
-        <line num="274" count="0" type="stmt"/>
-        <line num="281" count="0" type="stmt"/>
-        <line num="288" count="0" type="stmt"/>
-        <line num="295" count="0" type="stmt"/>
-        <line num="302" count="0" type="stmt"/>
-        <line num="311" count="0" type="stmt"/>
-        <line num="314" count="0" type="stmt"/>
-        <line num="359" count="0" type="stmt"/>
-        <line num="369" count="0" type="stmt"/>
-        <line num="384" count="0" type="stmt"/>
-        <line num="394" count="0" type="stmt"/>
-        <line num="406" count="0" type="stmt"/>
-        <line num="407" count="0" type="stmt"/>
       </file>
       <file name="CapitalCallLockStatus.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/components/CapitalCallLockStatus.tsx">
         <metrics statements="12" coveredstatements="12" conditionals="16" coveredconditionals="12" methods="2" coveredmethods="2"/>
@@ -1005,38 +712,38 @@
         <line num="39" count="15" type="stmt"/>
       </file>
       <file name="CapitalCallWorkflowActions.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/components/CapitalCallWorkflowActions.tsx">
-        <metrics statements="32" coveredstatements="18" conditionals="40" coveredconditionals="17" methods="7" coveredmethods="3"/>
+        <metrics statements="32" coveredstatements="31" conditionals="40" coveredconditionals="31" methods="7" coveredmethods="7"/>
         <line num="18" count="1" type="stmt"/>
-        <line num="23" count="4" type="stmt"/>
-        <line num="24" count="4" type="stmt"/>
-        <line num="25" count="4" type="stmt"/>
-        <line num="26" count="4" type="stmt"/>
-        <line num="28" count="12" type="stmt"/>
-        <line num="29" count="4" type="stmt"/>
-        <line num="30" count="4" type="stmt"/>
-        <line num="31" count="4" type="stmt"/>
-        <line num="33" count="4" type="stmt"/>
-        <line num="34" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="44" count="4" type="stmt"/>
-        <line num="45" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
-        <line num="51" count="4" type="stmt"/>
-        <line num="52" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="57" count="0" type="stmt"/>
-        <line num="58" count="0" type="stmt"/>
-        <line num="62" count="4" type="stmt"/>
-        <line num="63" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="64" count="0" type="stmt"/>
-        <line num="69" count="4" type="cond" truecount="4" falsecount="0"/>
-        <line num="74" count="4" type="stmt"/>
-        <line num="144" count="4" type="cond" truecount="2" falsecount="3"/>
-        <line num="146" count="3" type="stmt"/>
-        <line num="148" count="1" type="stmt"/>
-        <line num="150" count="0" type="stmt"/>
-        <line num="152" count="0" type="stmt"/>
+        <line num="23" count="15" type="stmt"/>
+        <line num="24" count="15" type="stmt"/>
+        <line num="25" count="15" type="stmt"/>
+        <line num="26" count="15" type="stmt"/>
+        <line num="28" count="45" type="stmt"/>
+        <line num="29" count="15" type="stmt"/>
+        <line num="30" count="15" type="stmt"/>
+        <line num="31" count="15" type="stmt"/>
+        <line num="33" count="15" type="stmt"/>
+        <line num="34" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="44" count="15" type="stmt"/>
+        <line num="45" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="51" count="15" type="stmt"/>
+        <line num="52" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="62" count="15" type="stmt"/>
+        <line num="63" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="69" count="15" type="cond" truecount="4" falsecount="0"/>
+        <line num="74" count="15" type="stmt"/>
+        <line num="144" count="15" type="cond" truecount="4" falsecount="1"/>
+        <line num="146" count="8" type="stmt"/>
+        <line num="148" count="4" type="stmt"/>
+        <line num="150" count="1" type="stmt"/>
+        <line num="152" count="2" type="stmt"/>
         <line num="154" count="0" type="stmt"/>
       </file>
       <file name="CommentsSection.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/components/CommentsSection.tsx">
@@ -1058,16 +765,16 @@
       <file name="LockDialog.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/components/LockDialog.tsx">
         <metrics statements="11" coveredstatements="6" conditionals="14" coveredconditionals="6" methods="3" coveredmethods="1"/>
         <line num="24" count="1" type="stmt"/>
-        <line num="29" count="4" type="stmt"/>
-        <line num="32" count="4" type="stmt"/>
-        <line num="34" count="4" type="stmt"/>
+        <line num="29" count="7" type="stmt"/>
+        <line num="32" count="7" type="stmt"/>
+        <line num="34" count="7" type="stmt"/>
         <line num="35" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="37" count="0" type="stmt"/>
         <line num="41" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="42" count="0" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
-        <line num="50" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="52" count="3" type="stmt"/>
+        <line num="50" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="52" count="6" type="stmt"/>
       </file>
       <file name="SubTabCountCards.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/components/SubTabCountCards.tsx">
         <metrics statements="12" coveredstatements="10" conditionals="6" coveredconditionals="4" methods="5" coveredmethods="4"/>
@@ -1076,24 +783,24 @@
         <line num="31" count="3" type="stmt"/>
         <line num="33" count="3" type="stmt"/>
         <line num="36" count="3" type="stmt"/>
-        <line num="77" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="78" count="0" type="stmt"/>
-        <line num="85" count="3" type="stmt"/>
-        <line num="88" count="15" type="stmt"/>
-        <line num="90" count="15" type="cond" truecount="1" falsecount="1"/>
-        <line num="93" count="15" type="stmt"/>
-        <line num="103" count="0" type="stmt"/>
+        <line num="52" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="60" count="3" type="stmt"/>
+        <line num="63" count="15" type="stmt"/>
+        <line num="65" count="15" type="cond" truecount="1" falsecount="1"/>
+        <line num="68" count="15" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
       </file>
       <file name="SubmitDialog.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/components/SubmitDialog.tsx">
-        <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="18" count="1" type="stmt"/>
-        <line num="23" count="4" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
+        <line num="23" count="6" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
       </file>
     </package>
     <package name="features.capital-call.hooks">
-      <metrics statements="139" coveredstatements="80" conditionals="28" coveredconditionals="5" methods="78" coveredmethods="34"/>
+      <metrics statements="62" coveredstatements="62" conditionals="12" coveredconditionals="11" methods="31" coveredmethods="31"/>
       <file name="useCapitalCall.ts" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/hooks/useCapitalCall.ts">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
         <line num="3" count="1" type="stmt"/>
@@ -1105,120 +812,40 @@
         <line num="15" count="1" type="stmt"/>
         <line num="22" count="3" type="stmt"/>
       </file>
-      <file name="useCapitalCallSearch.ts" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/hooks/useCapitalCallSearch.ts">
-        <metrics statements="77" coveredstatements="28" conditionals="16" coveredconditionals="1" methods="47" coveredmethods="13"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="44" count="1" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="51" count="1" type="stmt"/>
-        <line num="52" count="0" type="stmt"/>
-        <line num="59" count="1" type="stmt"/>
-        <line num="76" count="1" type="stmt"/>
-        <line num="77" count="1" type="stmt"/>
-        <line num="79" count="0" type="stmt"/>
-        <line num="84" count="1" type="stmt"/>
-        <line num="85" count="1" type="stmt"/>
-        <line num="87" count="1" type="stmt"/>
-        <line num="88" count="0" type="stmt"/>
-        <line num="90" count="0" type="stmt"/>
-        <line num="91" count="0" type="stmt"/>
-        <line num="94" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="99" count="1" type="stmt"/>
-        <line num="100" count="0" type="stmt"/>
-        <line num="102" count="0" type="stmt"/>
-        <line num="104" count="0" type="stmt"/>
-        <line num="106" count="0" type="stmt"/>
-        <line num="107" count="0" type="stmt"/>
-        <line num="110" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="115" count="1" type="stmt"/>
-        <line num="116" count="0" type="stmt"/>
-        <line num="118" count="0" type="stmt"/>
-        <line num="119" count="0" type="stmt"/>
-        <line num="121" count="0" type="stmt"/>
-        <line num="122" count="0" type="stmt"/>
-        <line num="125" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="130" count="1" type="stmt"/>
-        <line num="131" count="0" type="stmt"/>
-        <line num="133" count="0" type="stmt"/>
-        <line num="134" count="0" type="stmt"/>
-        <line num="136" count="0" type="stmt"/>
-        <line num="137" count="0" type="stmt"/>
-        <line num="140" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="145" count="1" type="stmt"/>
-        <line num="146" count="0" type="stmt"/>
-        <line num="148" count="0" type="stmt"/>
-        <line num="149" count="0" type="stmt"/>
-        <line num="151" count="0" type="stmt"/>
-        <line num="152" count="0" type="stmt"/>
-        <line num="155" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="160" count="1" type="stmt"/>
-        <line num="161" count="0" type="stmt"/>
-        <line num="163" count="0" type="stmt"/>
-        <line num="164" count="0" type="stmt"/>
-        <line num="166" count="0" type="stmt"/>
-        <line num="167" count="0" type="stmt"/>
-        <line num="170" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="175" count="1" type="stmt"/>
-        <line num="176" count="0" type="stmt"/>
-        <line num="177" count="0" type="stmt"/>
-        <line num="179" count="0" type="stmt"/>
-        <line num="180" count="0" type="stmt"/>
-        <line num="181" count="0" type="stmt"/>
-        <line num="182" count="0" type="stmt"/>
-        <line num="183" count="0" type="stmt"/>
-        <line num="184" count="0" type="stmt"/>
-        <line num="185" count="0" type="stmt"/>
-        <line num="188" count="0" type="cond" truecount="0" falsecount="2"/>
-      </file>
       <file name="useCapitalCallWorkflow.ts" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/hooks/useCapitalCallWorkflow.ts">
-        <metrics statements="38" coveredstatements="34" conditionals="12" coveredconditionals="4" methods="17" coveredmethods="13"/>
+        <metrics statements="38" coveredstatements="38" conditionals="12" coveredconditionals="11" methods="17" coveredmethods="17"/>
         <line num="9" count="1" type="stmt"/>
-        <line num="10" count="10" type="stmt"/>
-        <line num="12" count="10" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
+        <line num="10" count="14" type="stmt"/>
+        <line num="12" count="14" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
-        <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="20" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="28" count="1" type="stmt"/>
-        <line num="29" count="10" type="stmt"/>
-        <line num="31" count="10" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
+        <line num="29" count="12" type="stmt"/>
+        <line num="31" count="12" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
         <line num="35" count="1" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
-        <line num="39" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="39" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="47" count="1" type="stmt"/>
-        <line num="48" count="10" type="stmt"/>
-        <line num="50" count="10" type="stmt"/>
-        <line num="51" count="1" type="stmt"/>
+        <line num="48" count="12" type="stmt"/>
+        <line num="50" count="12" type="stmt"/>
+        <line num="51" count="2" type="stmt"/>
         <line num="53" count="1" type="stmt"/>
         <line num="54" count="1" type="stmt"/>
         <line num="55" count="1" type="stmt"/>
-        <line num="58" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="58" count="1" type="cond" truecount="2" falsecount="0"/>
         <line num="66" count="1" type="stmt"/>
-        <line num="67" count="10" type="stmt"/>
-        <line num="69" count="10" type="stmt"/>
-        <line num="70" count="1" type="stmt"/>
+        <line num="67" count="12" type="stmt"/>
+        <line num="69" count="12" type="stmt"/>
+        <line num="70" count="2" type="stmt"/>
         <line num="72" count="1" type="stmt"/>
         <line num="73" count="1" type="stmt"/>
         <line num="74" count="1" type="stmt"/>
-        <line num="77" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="77" count="1" type="cond" truecount="2" falsecount="0"/>
         <line num="86" count="1" type="stmt"/>
         <line num="87" count="10" type="stmt"/>
         <line num="88" count="10" type="stmt"/>
@@ -1227,19 +854,19 @@
         <line num="92" count="10" type="stmt"/>
       </file>
       <file name="useLocking.ts" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/hooks/useLocking.ts">
-        <metrics statements="12" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="1"/>
+        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
         <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
       </file>
       <file name="useTabCounts.ts" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/hooks/useTabCounts.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
@@ -1250,50 +877,10 @@
       </file>
     </package>
     <package name="features.capital-call.pages">
-      <metrics statements="46" coveredstatements="32" conditionals="42" coveredconditionals="23" methods="22" coveredmethods="8"/>
+      <metrics statements="9" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="5"/>
       <file name="CapitalCallDashboard.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/pages/CapitalCallDashboard.tsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="7" count="1" type="stmt"/>
-      </file>
-      <file name="CapitalCallDetailsPage.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/pages/CapitalCallDetailsPage.tsx">
-        <metrics statements="37" coveredstatements="24" conditionals="40" coveredconditionals="21" methods="16" coveredmethods="3"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="28" count="3" type="stmt"/>
-        <line num="29" count="3" type="stmt"/>
-        <line num="30" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="32" count="3" type="stmt"/>
-        <line num="33" count="3" type="stmt"/>
-        <line num="34" count="3" type="stmt"/>
-        <line num="35" count="3" type="stmt"/>
-        <line num="37" count="3" type="stmt"/>
-        <line num="38" count="3" type="stmt"/>
-        <line num="47" count="3" type="stmt"/>
-        <line num="51" count="3" type="stmt"/>
-        <line num="52" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="53" count="3" type="stmt"/>
-        <line num="61" count="3" type="stmt"/>
-        <line num="62" count="3" type="stmt"/>
-        <line num="64" count="3" type="stmt"/>
-        <line num="65" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="66" count="3" type="cond" truecount="0" falsecount="2"/>
-        <line num="67" count="3" type="stmt"/>
-        <line num="71" count="3" type="stmt"/>
-        <line num="72" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="73" count="0" type="stmt"/>
-        <line num="77" count="0" type="stmt"/>
-        <line num="84" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="85" count="0" type="stmt"/>
-        <line num="92" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="93" count="0" type="stmt"/>
-        <line num="100" count="3" type="stmt"/>
-        <line num="104" count="0" type="stmt"/>
-        <line num="116" count="0" type="stmt"/>
-        <line num="130" count="0" type="stmt"/>
-        <line num="141" count="0" type="stmt"/>
-        <line num="152" count="0" type="stmt"/>
-        <line num="224" count="0" type="stmt"/>
-        <line num="232" count="0" type="stmt"/>
-        <line num="278" count="0" type="stmt"/>
       </file>
       <file name="CapitalCallPage.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/pages/CapitalCallPage.tsx">
         <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
@@ -1326,8 +913,8 @@
       <metrics statements="12" coveredstatements="11" conditionals="4" coveredconditionals="0" methods="13" coveredmethods="11"/>
       <file name="capitalCallStore.ts" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/capital-call/store/capitalCallStore.ts">
         <metrics statements="12" coveredstatements="11" conditionals="4" coveredconditionals="0" methods="13" coveredmethods="11"/>
-        <line num="52" count="2" type="stmt"/>
-        <line num="54" count="2" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
         <line num="66" count="1" type="stmt"/>
         <line num="69" count="1" type="stmt"/>
         <line num="72" count="1" type="stmt"/>
@@ -1367,89 +954,40 @@
       </file>
     </package>
     <package name="features.document-tracker.components">
-      <metrics statements="50" coveredstatements="27" conditionals="65" coveredconditionals="30" methods="17" coveredmethods="7"/>
+      <metrics statements="7" coveredstatements="5" conditionals="16" coveredconditionals="9" methods="2" coveredmethods="1"/>
       <file name="AdvancedSearchDialog.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/document-tracker/components/AdvancedSearchDialog.tsx">
         <metrics statements="7" coveredstatements="5" conditionals="16" coveredconditionals="9" methods="2" coveredmethods="1"/>
-        <line num="14" count="3" type="stmt"/>
-        <line num="24" count="23" type="stmt"/>
-        <line num="28" count="23" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="24" count="17" type="stmt"/>
+        <line num="28" count="17" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
-        <line num="33" count="23" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="17" type="cond" truecount="2" falsecount="0"/>
         <line num="35" count="6" type="stmt"/>
-      </file>
-      <file name="DocumentTrackerFilters.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/document-tracker/components/DocumentTrackerFilters.tsx">
-        <metrics statements="14" coveredstatements="9" conditionals="17" coveredconditionals="10" methods="6" coveredmethods="2"/>
-        <line num="16" count="2" type="stmt"/>
-        <line num="21" count="15" type="stmt"/>
-        <line num="29" count="15" type="stmt"/>
-        <line num="39" count="15" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
-        <line num="45" count="15" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="49" count="15" type="stmt"/>
-        <line num="56" count="0" type="stmt"/>
-        <line num="158" count="0" type="stmt"/>
-        <line num="160" count="0" type="stmt"/>
-        <line num="161" count="0" type="stmt"/>
-      </file>
-      <file name="DocumentTrackerGrid.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/document-tracker/components/DocumentTrackerGrid.tsx">
-        <metrics statements="29" coveredstatements="13" conditionals="32" coveredconditionals="11" methods="9" coveredmethods="4"/>
-        <line num="18" count="2" type="stmt"/>
-        <line num="27" count="8" type="stmt"/>
-        <line num="32" count="8" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="35" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="40" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="45" count="8" type="stmt"/>
-        <line num="46" count="30" type="cond" truecount="1" falsecount="1"/>
-        <line num="47" count="30" type="stmt"/>
-        <line num="49" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="56" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="57" count="1" type="stmt"/>
-        <line num="65" count="7" type="cond" truecount="5" falsecount="0"/>
-        <line num="66" count="4" type="stmt"/>
-        <line num="77" count="3" type="stmt"/>
-        <line num="176" count="3" type="stmt"/>
-        <line num="179" count="1" type="stmt"/>
-        <line num="218" count="0" type="stmt"/>
-        <line num="229" count="0" type="stmt"/>
-        <line num="231" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="236" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="237" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="238" count="0" type="stmt"/>
-        <line num="241" count="0" type="stmt"/>
-        <line num="244" count="0" type="stmt"/>
-        <line num="260" count="0" type="stmt"/>
       </file>
     </package>
     <package name="features.document-tracker.hooks">
-      <metrics statements="25" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="4"/>
+      <metrics statements="25" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="12"/>
       <file name="useDocumentSearch.ts" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/document-tracker/hooks/useDocumentSearch.ts">
-        <metrics statements="25" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="4"/>
+        <metrics statements="25" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="12"/>
         <line num="6" count="1" type="stmt"/>
-        <line num="7" count="7" type="stmt"/>
-        <line num="13" count="7" type="stmt"/>
-        <line num="15" count="6" type="stmt"/>
-        <line num="20" count="7" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="28" count="7" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="35" count="7" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="42" count="7" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="50" count="7" type="stmt"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="13" count="11" type="stmt"/>
+        <line num="15" count="10" type="stmt"/>
+        <line num="20" count="11" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="28" count="11" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="35" count="11" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="42" count="11" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="50" count="11" type="stmt"/>
         <line num="63" count="1" type="stmt"/>
-        <line num="64" count="3" type="stmt"/>
+        <line num="64" count="2" type="stmt"/>
         <line num="66" count="1" type="stmt"/>
         <line num="71" count="1" type="stmt"/>
-        <line num="72" count="0" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
         <line num="73" count="0" type="stmt"/>
         <line num="75" count="0" type="stmt"/>
         <line num="76" count="0" type="stmt"/>
@@ -1460,53 +998,53 @@
       </file>
     </package>
     <package name="features.document-tracker.pages">
-      <metrics statements="27" coveredstatements="17" conditionals="23" coveredconditionals="13" methods="10" coveredmethods="3"/>
+      <metrics statements="27" coveredstatements="25" conditionals="23" coveredconditionals="23" methods="10" coveredmethods="8"/>
       <file name="DocumentDetailsPage.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/document-tracker/pages/DocumentDetailsPage.tsx">
-        <metrics statements="15" coveredstatements="9" conditionals="19" coveredconditionals="12" methods="6" coveredmethods="2"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="11" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="12" count="0" type="stmt"/>
+        <metrics statements="15" coveredstatements="13" conditionals="19" coveredconditionals="19" methods="6" coveredmethods="4"/>
+        <line num="7" count="9" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="11" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
-        <line num="30" count="3" type="cond" truecount="3" falsecount="1"/>
-        <line num="31" count="0" type="stmt"/>
+        <line num="30" count="8" type="cond" truecount="4" falsecount="0"/>
+        <line num="31" count="2" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="60" count="3" type="stmt"/>
-        <line num="67" count="3" type="stmt"/>
-        <line num="70" count="0" type="stmt"/>
-        <line num="110" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="118" count="3" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="60" count="6" type="stmt"/>
+        <line num="67" count="6" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="110" count="20" type="cond" truecount="2" falsecount="0"/>
+        <line num="118" count="20" type="stmt"/>
       </file>
       <file name="DocumentTrackerPage.tsx" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/document-tracker/pages/DocumentTrackerPage.tsx">
-        <metrics statements="12" coveredstatements="8" conditionals="4" coveredconditionals="1" methods="4" coveredmethods="1"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="29" count="3" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="33" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="49" count="3" type="stmt"/>
+        <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="23" count="6" type="stmt"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="29" count="6" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="33" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="49" count="4" type="stmt"/>
       </file>
     </package>
     <package name="features.document-tracker.schemas">
       <metrics statements="11" coveredstatements="11" conditionals="14" coveredconditionals="14" methods="5" coveredmethods="5"/>
       <file name="filterSchema.ts" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/features/document-tracker/schemas/filterSchema.ts">
         <metrics statements="11" coveredstatements="11" conditionals="14" coveredconditionals="14" methods="5" coveredmethods="5"/>
-        <line num="3" count="4" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
         <line num="8" count="11" type="cond" truecount="2" falsecount="0"/>
         <line num="16" count="11" type="cond" truecount="2" falsecount="0"/>
         <line num="23" count="11" type="cond" truecount="2" falsecount="0"/>
         <line num="28" count="11" type="cond" truecount="4" falsecount="0"/>
         <line num="29" count="3" type="stmt"/>
         <line num="31" count="8" type="stmt"/>
-        <line num="42" count="4" type="stmt"/>
+        <line num="42" count="3" type="stmt"/>
         <line num="52" count="12" type="cond" truecount="4" falsecount="0"/>
         <line num="53" count="2" type="stmt"/>
         <line num="55" count="10" type="stmt"/>
@@ -1641,22 +1179,22 @@
       </file>
       <file name="formatters.ts" path="/Users/I5285/Documents/GitHub/ale-enterprise-poc/frontend/src/lib/utils/formatters.ts">
         <metrics statements="18" coveredstatements="18" conditionals="4" coveredconditionals="4" methods="7" coveredmethods="7"/>
-        <line num="1" count="5" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
         <line num="2" count="9" type="stmt"/>
-        <line num="10" count="5" type="stmt"/>
-        <line num="11" count="11" type="stmt"/>
-        <line num="12" count="11" type="stmt"/>
-        <line num="21" count="5" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="35" type="stmt"/>
+        <line num="12" count="35" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
         <line num="22" count="2" type="stmt"/>
         <line num="23" count="2" type="stmt"/>
-        <line num="30" count="5" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
         <line num="31" count="6" type="stmt"/>
-        <line num="34" count="5" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
         <line num="35" count="4" type="stmt"/>
-        <line num="38" count="5" type="stmt"/>
+        <line num="38" count="4" type="stmt"/>
         <line num="39" count="11" type="stmt"/>
         <line num="51" count="11" type="cond" truecount="2" falsecount="0"/>
-        <line num="54" count="5" type="stmt"/>
+        <line num="54" count="4" type="stmt"/>
         <line num="55" count="5" type="stmt"/>
         <line num="61" count="5" type="cond" truecount="2" falsecount="0"/>
       </file>

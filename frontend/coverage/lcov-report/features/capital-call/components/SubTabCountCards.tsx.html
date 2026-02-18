@@ -156,33 +156,7 @@
 <a name='L91'></a><a href='#L91'>91</a>
 <a name='L92'></a><a href='#L92'>92</a>
 <a name='L93'></a><a href='#L93'>93</a>
-<a name='L94'></a><a href='#L94'>94</a>
-<a name='L95'></a><a href='#L95'>95</a>
-<a name='L96'></a><a href='#L96'>96</a>
-<a name='L97'></a><a href='#L97'>97</a>
-<a name='L98'></a><a href='#L98'>98</a>
-<a name='L99'></a><a href='#L99'>99</a>
-<a name='L100'></a><a href='#L100'>100</a>
-<a name='L101'></a><a href='#L101'>101</a>
-<a name='L102'></a><a href='#L102'>102</a>
-<a name='L103'></a><a href='#L103'>103</a>
-<a name='L104'></a><a href='#L104'>104</a>
-<a name='L105'></a><a href='#L105'>105</a>
-<a name='L106'></a><a href='#L106'>106</a>
-<a name='L107'></a><a href='#L107'>107</a>
-<a name='L108'></a><a href='#L108'>108</a>
-<a name='L109'></a><a href='#L109'>109</a>
-<a name='L110'></a><a href='#L110'>110</a>
-<a name='L111'></a><a href='#L111'>111</a>
-<a name='L112'></a><a href='#L112'>112</a>
-<a name='L113'></a><a href='#L113'>113</a>
-<a name='L114'></a><a href='#L114'>114</a>
-<a name='L115'></a><a href='#L115'>115</a>
-<a name='L116'></a><a href='#L116'>116</a>
-<a name='L117'></a><a href='#L117'>117</a>
-<a name='L118'></a><a href='#L118'>118</a>
-<a name='L119'></a><a href='#L119'>119</a>
-<a name='L120'></a><a href='#L120'>120</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L94'></a><a href='#L94'>94</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -233,31 +207,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -275,7 +224,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">15x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -335,38 +283,13 @@ export const SubTabCountCards: React.FC = () =&gt; {
   
   const { data: counts, isLoading } = useTabCounts();
   
-  // Define card configurations matching UI mockup
+  /* Unified style: all cards primary teal (mockup consistency report) */
   const cardConfigs = [
-    {
-      id: ForReviewSubTab.SSI_VERIFICATION_NEEDED,
-      label: 'SSI Verification Needed',
-      bgColor: 'bg-teal-700',
-      hoverColor: 'hover:bg-teal-800'
-    },
-    {
-      id: ForReviewSubTab.TRANSACTION_TO_BE_PROCESSED,
-      label: 'Transaction To Be Processed',
-      bgColor: 'bg-green-600',
-      hoverColor: 'hover:bg-green-700'
-    },
-    {
-      id: ForReviewSubTab.MISSING_FUND_DOCUMENT,
-      label: 'Missing Fund Document',
-      bgColor: 'bg-green-600',
-      hoverColor: 'hover:bg-green-700'
-    },
-    {
-      id: ForReviewSubTab.MISSING_CLIENT_INSTRUCTION,
-      label: 'Missing Client Instruction',
-      bgColor: 'bg-green-600',
-      hoverColor: 'hover:bg-green-700'
-    },
-    {
-      id: ForReviewSubTab.MISSING_CLIENT_AND_FUND_INSTRUCTION,
-      label: 'Missing Client And Fund Instruction',
-      bgColor: 'bg-green-600',
-      hoverColor: 'hover:bg-green-700'
-    }
+    { id: ForReviewSubTab.SSI_VERIFICATION_NEEDED, label: 'SSI Verification Needed' },
+    { id: ForReviewSubTab.TRANSACTION_TO_BE_PROCESSED, label: 'Transaction To Be Processed' },
+    { id: ForReviewSubTab.MISSING_FUND_DOCUMENT, label: 'Missing Fund Document' },
+    { id: ForReviewSubTab.MISSING_CLIENT_INSTRUCTION, label: 'Missing Client Instruction' },
+    { id: ForReviewSubTab.MISSING_CLIENT_AND_FUND_INSTRUCTION, label: 'Missing Client And Fund Instruction' },
   ];
   
   // Get count for specific sub-tab
@@ -380,7 +303,7 @@ export const SubTabCountCards: React.FC = () =&gt; {
   <span class="missing-if-branch" title="if path not taken" >I</span>if (isLoading) {
 <span class="cstat-no" title="statement not covered" >    return (</span>
       &lt;div className="flex items-center justify-center py-8"&gt;
-        &lt;Loader2 className="h-6 w-6 animate-spin text-teal-600" /&gt;
+        &lt;Loader2 className="h-6 w-6 animate-spin text-primary" /&gt;
       &lt;/div&gt;
     );
   }
@@ -395,13 +318,12 @@ export const SubTabCountCards: React.FC = () =&gt; {
         
         return (
           &lt;Card
-          title={config.label}
+            title={config.label}
             key={config.id}
             className={`
               cursor-pointer transition-all
-              ${isActive ? 'ring-2 ring-teal-600 shadow-lg' : 'shadow'}
-              ${config.bgColor} ${config.hoverColor}
-              text-white
+              ${isActive ? 'ring-2 ring-primary shadow-lg' : 'shadow'}
+              bg-primary hover:bg-primary-dark text-white
             `}
             onClick={<span class="fstat-no" title="function not covered" >() =</span>&gt; <span class="cstat-no" title="statement not covered" >setActiveSubTab(config.id)}</span>
           &gt;
@@ -427,7 +349,7 @@ export const SubTabCountCards: React.FC = () =&gt; {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-02-18T06:40:40.332Z
+                at 2026-02-18T10:20:07.326Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>
