@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git push:*)",
+      "Bash(npm install:*)",
+      "Bash(npm test:*)",
+      "Bash(node -e:*)",
+      "Bash(node --experimental-vm-modules node_modules/.bin/jest:*)",
+      "Bash(find:*)",
+      "Bash(ls:*)",
+      "Bash(xargs:*)",
+      "Bash(sort:*)",
+      "Bash(npm run test:coverage:*)"
+    ]
+  }
+}
